@@ -1,52 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title>Image Converter</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="h-100">
-      <div class="container mx-auto">
-        <h1 class="text-center">Image Converter App</h1>
-        <br />
-        <form id="myForm" enctype="multipart/form-data">
-          <div class="form-group">
-            <label for="image">Select Image:</label>
-            <input type="file" id="image" class="form-control" />
-            <img style="display: none" id="selectedImage" />
-          </div>
-          <div>Or,</div>
-          <div class="form-group">
-            <label for="fileurl">Image URL:</label>
-            <input
-              type="text"
-              id="url"
-              placeholder="URL"
-              class="form-control"
-            />
-          </div>
-          <div class="form-group">
-            <label for="format">Select Format:</label>
-            <select class="form-control" id="format">
-              <option>JPEG</option>
-              <option>PNG</option>
-              <option>GIF</option>
-            </select>
-          </div>
-          <div class="form-group mt-2">
-            <button class="btn btn-dark btn-block">Convert Image</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/browser-image-converter@0.1.1/dist/index.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="script.js"></script>
+<head>
+<title>Image Converter</title>
+<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC crossorigin=anonymous>
+<link rel=stylesheet href=style.css>
+</head>
+<body>
+<div class=h-100>
+<div class="container mx-auto">
+<h1 class=text-center>Image Converter App</h1>
+<br>
+<form id=myForm enctype=multipart/form-data>
+<div class=form-group>
+<label for=image>Select Image:</label>
+<input type=file id=image class=form-control>
+<img style=display:none id=selectedImage>
+</div>
+<div>Or,</div>
+<div class=form-group>
+<label for=fileurl>Image URL:</label>
+<input id=url placeholder=URL class=form-control>
+</div>
+<div class=form-group>
+<label for=format>Select Format:</label>
+<select class=form-control id=format>
+<option>JPEG</option>
+<option>PNG</option>
+<option>GIF</option>
+</select>
+</div>
+<div class="form-group mt-2">
+<button class="btn btn-dark btn-block">Convert Image</button>
+</div>
+</form>
+</div>
+</div>
+</body>
+<script src=https://cdn.jsdelivr.net/npm/browser-image-converter@0.1.1/dist/index.min.js></script>
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js></script>
+<script src=script.js></script>
 </html>
